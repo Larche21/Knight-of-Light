@@ -31,27 +31,12 @@ public class ScreenIntro implements Screen {
     @Override
     public void render(float delta) {
         // обработка касаний
-        if(Gdx.input.justTouched()) {
-            gg.touch.set(Gdx.input.getX(), Gdx.input.getY(), 0);
-            gg.camera.unproject(gg.touch);
-            if(btnPlay.hit(gg.touch.x, gg.touch.y)){
-                gg.setScreen(gg.screenGame);
-            }
-            if(btnSettings.hit(gg.touch.x, gg.touch.y)){
-                gg.setScreen(gg.screenSettings);
-            }
-            if(btnAbout.hit(gg.touch.x, gg.touch.y)){
-                gg.setScreen(gg.screenAbout);
-            }
-            if(btnExit.hit(gg.touch.x, gg.touch.y)){
-                Gdx.app.exit();
-            }
         }
 
         // игровые события
 
         // отрисовка графики
-        gg.camera.update();
+        /*gg.camera.update();
         gg.batch.setProjectionMatrix(gg.camera.combined);
         gg.batch.begin();
         gg.batch.draw(imgBG, 0, 0, SCR_WIDTH, SCR_HEIGHT);
@@ -60,7 +45,7 @@ public class ScreenIntro implements Screen {
         btnAbout.font.draw(gg.batch, btnAbout.text, btnAbout.x, btnAbout.y);
         btnExit.font.draw(gg.batch, btnExit.text, btnExit.x, btnExit.y);
         gg.batch.end();
-    }
+    }*/
 
     @Override
     public void resize(int width, int height) {

@@ -22,23 +22,17 @@ public class ScreenGame implements Screen {
     Texture imgEnemy;
     Texture imgShot;
     Texture imgFragmentEnemy, imgFragmentShip;
-    Sound sndShot;
-    Sound sndExplosion;
 
 
-    long timeEnemyLastSpawn, timeEnemySpawnInterval = 1100;
-    long timeShotLastSpawn, timeShotSpawnInterval = 500;
+
+
 
     public ScreenGame(MyGG myGG) {
         gg = myGG;
 
-        isAccelerometerPresent = Gdx.input.isPeripheralAvailable(Input.Peripheral.Accelerometer);
-        //isGyroscopePresent = Gdx.input.isPeripheralAvailable(Input.Peripheral.Gyroscope);
 
-        imgStars = new Texture("stars.png");
-        imgShip = new Texture("ship.png");
-        imgEnemy = new Texture("enemy.png");
-        imgShot = new Texture("shot.png");
+
+
 
 
 
@@ -87,13 +81,7 @@ public class ScreenGame implements Screen {
 
     @Override
     public void dispose() {
-        imgStars.dispose();
-        imgShip.dispose();
-        imgShot.dispose();
-        imgFragmentEnemy.dispose();
-        imgFragmentShip.dispose();
-        sndShot.dispose();
-        sndExplosion.dispose();
+
     }
 
 

@@ -11,16 +11,15 @@ public class ScreenAbout implements Screen {
     MyGG gg;
     Texture imgBG;
     TextButton btnBack;
-    String textAbout =  "Эта космическая стрелялка\n" +
+    String textAbout =  "Это игра о добром воине\n" +
                         "создана в IT-школе Samsung\n" +
-                        "и служит добрым начинанием\n" +
-                        "для всех будущих космонавтов\n" +
-                        "и их болельщиков";
+                        "которая будет интересна напротяжении \n" +
+                        "всего путешествия";
 
     public ScreenAbout(MyGG myGG){
         gg = myGG;
         btnBack = new TextButton(gg.fontLarge, "BACK", 220, 100);
-        imgBG = new Texture("bg/space01.jpg");
+
     }
 
     @Override
