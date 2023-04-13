@@ -20,7 +20,7 @@ public class ScreenIntro implements Screen {
         btnSettings = new TextButton(gg.fontLarge, "SETTINGS", 50, 300);
         btnAbout = new TextButton(gg.fontLarge, "ABOUT", 50, 200);
         btnExit = new TextButton(gg.fontLarge, "EXIT", 50, 100);
-        imgBG = new Texture("bg/Foon.jpg");
+        imgBG = new Texture("Foon.jpg");
     }
 
     @Override
